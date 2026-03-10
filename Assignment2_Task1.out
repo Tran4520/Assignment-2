@@ -1,0 +1,258 @@
+CREATE TABLE Stats (
+    Abb TEXT PRIMARY KEY,
+    Area REAL,
+    Pop INTEGER
+);
+CREATE TABLE Names (
+    Abb TEXT PRIMARY KEY,
+    State TEXT
+);
+CREATE TABLE Capitals (
+    State TEXT PRIMARY KEY,
+    Capital TEXT,
+    CapitalPop INTEGER
+);
+0|Abb|TEXT|0||1
+1|Area|REAL|0||0
+2|Pop|INTEGER|0||0
+0|Abb|TEXT|0||1
+1|State|TEXT|0||0
+0|State|TEXT|0||1
+1|Capital|TEXT|0||0
+2|CapitalPop|INTEGER|0||0
+Capitals  Names     Stats   
+Stats
+Names
+Capitals
+Abb  Area      Pop    
+---  --------  -------
+Abb  Area      Pop    
+AL   135767.0  5108468
+Abb  State  
+---  -------
+Abb  State  
+AL   Alabama
+State    Capital     CapitalPop
+-------  ----------  ----------
+State    Capital     CapitalPop
+Alabama  Montgomery  198665    
+Abb  Pop     
+---  --------
+Abb  Pop     
+CA   38965193
+TX   30503301
+FL   22610726
+NY   19571216
+Abb
+---
+RI 
+COUNT(*)
+--------
+30      
+Abb
+---
+DE 
+HI 
+ID 
+ME 
+MT 
+NE 
+NH 
+RI 
+WV 
+Abb  Density
+---  -------
+Abb         
+AL   37.63  
+AK   0.43   
+AZ   25.17  
+AR   22.27  
+CA   91.91  
+CO   21.8   
+CT   251.95 
+DE   160.08 
+FL   132.76 
+GA   71.66  
+HI   50.69  
+ID   9.08   
+IL   83.67  
+IN   72.75  
+IA   22.0   
+KS   13.8   
+KY   43.25  
+LA   33.72  
+ME   15.23  
+MD   192.35 
+MA   256.12 
+MI   40.07  
+MN   25.48  
+MS   23.44  
+MO   34.32  
+MT   2.97   
+NE   9.88   
+NV   11.15  
+NH   57.9   
+NJ   411.26 
+NM   6.71   
+NY   138.51 
+NC   77.73  
+ND   4.28   
+OH   101.52 
+OK   22.39  
+OR   16.61  
+PA   108.67 
+RI   273.92 
+SC   64.79  
+SD   4.6    
+TN   65.29  
+TX   43.85  
+UT   15.54  
+VT   26.0   
+VA   78.67  
+WA   42.31  
+WV   28.21  
+WI   34.85  
+WY   2.31   
+Abb  State           Capital       
+---  --------------  --------------
+Abb  State           Capital       
+AL   Alabama         Montgomery    
+AK   Alaska          Juneau        
+AZ   Arizona         Phoenix       
+AR   Arkansas        Little Rock   
+CA   California      Sacramento    
+CO   Colorado        Denver        
+CT   Connecticut     Hartford      
+DE   Delaware        Dover         
+FL   Florida         Tallahassee   
+GA   Georgia         Atlanta       
+HI   Hawaii          Honolulu      
+ID   Idaho           Boise         
+IL   Illinois        Springfield   
+IN   Indiana         Indianapolis  
+IA   Iowa            Des Moines    
+KS   Kansas          Topeka        
+KY   Kentucky        Frankfort     
+LA   Louisiana       Baton Rouge   
+ME   Maine           Augusta       
+MD   Maryland        Annapolis     
+MA   Massachusetts   Boston        
+MI   Michigan        Lansing       
+MN   Minnesota       Saint Paul    
+MS   Mississippi     Jackson       
+MO   Missouri        Jefferson City
+MT   Montana         Helena        
+NE   Nebraska        Lincoln       
+NV   Nevada          Carson City   
+NH   New Hampshire   Concord       
+NJ   New Jersey      Trenton       
+NM   New Mexico      Santa Fe      
+NY   New York        Albany        
+NC   North Carolina  Raleigh       
+ND   North Dakota    Bismarck      
+OH   Ohio            Columbus      
+OK   Oklahoma        Oklahoma City 
+OR   Oregon          Salem         
+PA   Pennsylvania    Harrisburg    
+RI   Rhode Island    Providence    
+SC   South Carolina  Columbia      
+SD   South Dakota    Pierre        
+TN   Tennessee       Nashville     
+TX   Texas           Austin        
+UT   Utah            Salt Lake City
+VT   Vermont         Montpelier    
+VA   Virginia        Richmond      
+WA   Washington      Olympia       
+WV   West Virginia   Charleston    
+WI   Wisconsin       Madison       
+WY   Wyoming         Cheyenne      
+State           Capital         CapitalPop
+--------------  --------------  ----------
+State           Capital         CapitalPop
+Alabama         Montgomery      198665    
+Alaska          Juneau          31973     
+Arizona         Phoenix         1624569   
+Arkansas        Little Rock     201998    
+California      Sacramento      525041    
+Colorado        Denver          711463    
+Connecticut     Hartford        120576    
+Delaware        Dover           38992     
+Florida         Tallahassee     197102    
+Georgia         Atlanta         496461    
+Hawaii          Honolulu        345510    
+Idaho           Boise           237446    
+Illinois        Springfield     113394    
+Indiana         Indianapolis    882039    
+Iowa            Des Moines      212031    
+Kansas          Topeka          125963    
+Kentucky        Frankfort       28595     
+Louisiana       Baton Rouge     222185    
+Maine           Augusta         18968     
+Maryland        Annapolis       40687     
+Massachusetts   Boston          654776    
+Michigan        Lansing         112684    
+Minnesota       Saint Paul      307193    
+Mississippi     Jackson         149761    
+Missouri        Jefferson City  42772     
+Montana         Helena          33120     
+Nebraska        Lincoln         292657    
+Nevada          Carson City     58993     
+New Hampshire   Concord         44006     
+New Jersey      Trenton         90457     
+New Mexico      Santa Fe        88193     
+New York        Albany          98617     
+North Carolina  Raleigh         469124    
+North Dakota    Bismarck        74138     
+Ohio            Columbus        906528    
+Oklahoma        Oklahoma City   687725    
+Oregon          Salem           177723    
+Pennsylvania    Harrisburg      50135     
+Rhode Island    Providence      189692    
+South Carolina  Columbia        137541    
+South Dakota    Pierre          14000     
+Tennessee       Nashville       678851    
+Texas           Austin          964177    
+Utah            Salt Lake City  200478    
+Vermont         Montpelier      8002      
+Virginia        Richmond        226604    
+Washington      Olympia         55919     
+West Virginia   Charleston      48018     
+Wisconsin       Madison         269196    
+Wyoming         Cheyenne        65051     
+State        
+-------------
+Massachusetts
+Ohio         
+State    Capital     
+-------  ------------
+State    Capital     
+Arizona  Phoenix     
+Indiana  Indianapolis
+Ohio     Columbus    
+Texas    Austin      
+TotalLandArea
+-------------
+9833342.0    
+Abb  Abb
+---  ---
+AR   IA 
+AR   OK 
+CO   IA 
+State     
+----------
+Alaska    
+California
+Florida   
+Montana   
+New Mexico
+State     
+Texas     
+DensityRange  TotPop      AvgArea  
+------------  ----------  ---------
+High          95147081.0  59440.82 
+Low           134794109   262083.47
+Medium        104294733   131698.9 
+DensityRange  TotPop     AvgArea  
+------------  ---------  ---------
+Low           134794109  262083.47
+Medium        104294733  131698.9 
